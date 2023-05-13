@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="StringCalculatorTest">
+        <State />
+      </entry>
       <entry key="StringCalculatorTest.when &quot;&quot; should return 0">
         <State />
       </entry>
