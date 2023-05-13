@@ -33,4 +33,11 @@ class StringCalculatorTest {
 
         assertEquals(10, result)
     }
+
+    @Test
+    fun `when 1NewLine2,3 should return 6`() {
+        val result = stringCalculator.add("1\n2,3")
+
+        assertEquals(6, result)
+    }
 }
