@@ -4,7 +4,6 @@ class StringCalculator {
     fun add(input: String): Int {
         val delimiters = arrayOf(",", "\n")
         val numbers : String;
-        var sum = 0
 
         when {
             input.isEmpty() -> return 0
@@ -15,9 +14,6 @@ class StringCalculator {
             else -> numbers = input
         }
 
-        numbers.split(*delimiters).forEach {
-            sum += it.toInt()
-        }
-        return sum
+        return numbers.split(*delimiters).sumOf { it.toInt() }
     }
 }
