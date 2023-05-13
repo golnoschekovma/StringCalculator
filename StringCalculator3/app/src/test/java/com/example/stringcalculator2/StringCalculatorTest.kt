@@ -10,5 +10,10 @@ class StringCalculatorTest {
 
         assertEquals(0, result)
     }
+    @Test
+    fun `when 1 should return 1`() {
+        val result = StringCalculator().add("1")
 
+        assertEquals(1, result)
+    }
 }
