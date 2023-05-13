@@ -5,43 +5,48 @@ import org.junit.Test
 
 class StringCalculatorTest {
     @Test
-    fun empty_0() {
+    fun `when empty param should return 0`() {
         val stringCalculator = StringCalculator()
+
         val actual = stringCalculator.add("")
-        val expected = 0
-        assertEquals(expected, actual)
+
+        assertEquals(0, actual)
     }
 
     @Test
-    fun oneInteger_1() {
+    fun `when 1 should return 1`() {
         val stringCalculator = StringCalculator()
+
         val actual = stringCalculator.add("1")
-        val expected = 1
-        assertEquals(expected, actual)
+
+        assertEquals(1, actual)
     }
 
     @Test
-    fun twoIntegers_3() {
+    fun `when 1,2 should return 3`() {
         val stringCalculator = StringCalculator()
+
         val actual = stringCalculator.add("1,2")
-        val expected = 3
-        assertEquals(expected, actual)
+
+        assertEquals(3, actual)
     }
 
     @Test
     fun unknownAmountOfIntegers_36() {
         val stringCalculator = StringCalculator()
+
         val actual = stringCalculator.add("1,2,3,4,5,6,7,8")
-        val expected = 36
-        assertEquals(expected, actual)
+
+        assertEquals(36, actual)
     }
 
     @Test
-    fun linesBetweenNumbers_6() {
+    fun `when 1 NewLine 2,3 should return 6`() {
         val stringCalculator = StringCalculator()
+
         val actual = stringCalculator.add("1\n2,3")
-        val expected = 6
-        assertEquals(expected, actual)
+
+        assertEquals(6, actual)
     }
 
     @Test
