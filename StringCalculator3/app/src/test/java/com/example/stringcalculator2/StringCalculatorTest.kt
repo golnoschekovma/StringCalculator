@@ -26,4 +26,11 @@ class StringCalculatorTest {
 
         assertEquals(3, result)
     }
+
+    @Test
+    fun `when 1,2,3,4 should return 10`() {
+        val result = stringCalculator.add("1,2,3,4")
+
+        assertEquals(10, result)
+    }
 }
